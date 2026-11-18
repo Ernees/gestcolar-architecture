@@ -1,5 +1,7 @@
 # GestColar — Architecture Overview
 
+![GestColar architecture overview](./assets/social-preview.png)
+
 > Multi-tenant school-management SaaS, running in production with a real school.
 > *Plataforma SaaS multi-tenant de gestión escolar, en producción con un colegio real.*
 
