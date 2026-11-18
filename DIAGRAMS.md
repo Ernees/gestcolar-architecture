@@ -21,6 +21,11 @@ flowchart TD
 
 Every collection carries `schoolId`: that is the tenant boundary.
 
+> Note: MongoDB is a document database. The entity-relationship notation below is only a way to draw how documents reference each other.
+> The links (`alumnoId`, `profesorId`, `hijos`, ...) are plain id references: there are no foreign keys or joins, the database does not
+> check them, and cross-collection lookups are done in application code. Enforcing relations and tenant boundaries in the database
+> is one of the reasons for the PostgreSQL migration.
+
 ```mermaid
 erDiagram
   USUARIO ||--o{ ASIGNACION : "profesorId"
